@@ -1,0 +1,21 @@
+a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background-color: maroon;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+a:hover::after {
+  transform: scaleX(1); /* Expand the underline */
+}

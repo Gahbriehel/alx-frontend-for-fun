@@ -13,7 +13,7 @@ body {
     font-size: $font-normal;
     h1 {
         font-size: $font-h1;
-        .smaller {
+        &.smaller {
             font-size: $font-small;
         }
     }

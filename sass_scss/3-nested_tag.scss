@@ -3,11 +3,13 @@
     Margin 10px to all of the p tags inside body tags
     using nested declarations
 */
+$nonePx: 0px;
+$decPx: 10px;
 
 body {
-    margin: 0;
-    padding: 0;
+    margin: $nonePx;
+    padding: $nonePx;
     p {
-        margin: 10px;
+        margin: $decPx;
     }
 }

@@ -1,0 +1,27 @@
+/* This file assigns Font size 20px to h1 tags Font size 18px to h1 tags, when your screen width is smaller than 960px Font size 16px to h1 tags, when your screen width is smaller than 640px Font size 14px to h1 tags, when your screen width is smaller than 320px  */
+$font-h1: 20px;
+$font-big: 18px;
+$font-medium: 16px;
+$font-small: 14px;
+$color-h1: #1D1D1D;
+h1 {
+    font-size: $font-h1;
+    @media screen and (max-width: 960px) {
+        & {
+            font-size: $font-big;
+        }
+    }
+    @media screen and (max-width: 640px) {
+        & {
+            font-size: $font-medium;
+        }
+    }
+    @media screen and (max-width: 320px) {
+        & {
+            font-size: $font-small;
+        }
+        &.small {
+            color: $color-h1;
+        }
+    }
+}
